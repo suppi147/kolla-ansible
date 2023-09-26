@@ -11,7 +11,7 @@
 
 
 ### kolla-ansible auto script by suppi147
-`
+```
    #!/bin/bash
    COLOR='\033[1;36m' #cyan
    NC='\033[0m'
@@ -129,4 +129,4 @@
 
    echo -e "${COLOR} executing: kolla-ansible -i ./all-in-one bootstrap-servers${NC}"
    kolla-ansible -i ./all-in-one bootstrap-servers
-   `
+   ```
