@@ -1,34 +1,17 @@
-=============
-Kolla Ansible
-=============
+# Kolla Ansible
+### The Kolla Ansible is a deliverable project separated from Kolla project.
 
-.. image:: https://governance.openstack.org/tc/badges/kolla-ansible.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
+- Kolla Ansible deploys OpenStack services and infrastructure components in Docker containers.
 
-.. Change things from this point on
+### Kolla's mission statement is:
 
+- To provide production-ready containers and deployment tools for operating OpenStack clouds.
 
-The Kolla Ansible is a deliverable project separated from Kolla project.
-
-Kolla Ansible deploys OpenStack services and infrastructure components
-in Docker containers.
-
-Kolla's mission statement is:
-
-::
-
-    To provide production-ready containers and deployment tools for operating
-    OpenStack clouds.
-
-Kolla is highly opinionated out of the box, but allows for complete
-customization. This permits operators with little experience to deploy
-OpenStack quickly and as experience grows modify the OpenStack
-configuration to suit the operator's exact requirements.
+- Kolla is highly opinionated out of the box, but allows for complete customization. This permits operators with little experience to deploy OpenStack quickly and as experience grows modify the OpenStack configuration to suit the operator's exact requirements.
 
 
-kolla-ansible auto script by suppi147
-=====================================
-::
+### kolla-ansible auto script by suppi147
+`
    #!/bin/bash
    COLOR='\033[1;36m' #cyan
    NC='\033[0m'
@@ -146,3 +129,4 @@ kolla-ansible auto script by suppi147
 
    echo -e "${COLOR} executing: kolla-ansible -i ./all-in-one bootstrap-servers${NC}"
    kolla-ansible -i ./all-in-one bootstrap-servers
+   `
