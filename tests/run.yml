@@ -244,12 +244,12 @@
 
     - name: install kolla-ansible and dependencies
       vars:
-        ansible_core_version_min: "==2.14.*"
-        ansible_core_version_max: "==2.15.*"
+        ansible_core_version_min: "==2.10.*"
+        ansible_core_version_max: "==2.14.*"
         # Test latest ansible version on Ubuntu, minimum supported on others.
         ansible_core_version_constraint: >-
           {{ ansible_core_version_min if is_upgrade or base_distro != 'ubuntu' else ansible_core_version_max }}
-        ansible_version_min: "==7.*"
+        ansible_version_min: "==6.*"
         ansible_version_max: "==8.*"
         # Test latest ansible version on Ubuntu, minimum supported on others.
         ansible_version_constraint: >-
